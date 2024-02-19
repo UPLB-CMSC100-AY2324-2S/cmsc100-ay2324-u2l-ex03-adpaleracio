@@ -6,7 +6,7 @@
 
 const pword1 = "HELLO1234";
 const pword2 = "HELLO1234";
-const username = "Mingyu";
+const name = "Mingyu";
 
 function validatePassword(pword1, pword2){
     if(pword1.length < 8 && pword2.length < 8){             // if length is < 8
@@ -56,4 +56,17 @@ function reversePassword(pword1){
     for(let c = (pword1.length)-2; c >= 0; c--){
         newpass = newpass + pword1[c];
     }
+
+    return newpass;
 }
+
+function storePassword(name, pword1, pword2){
+    const user_info = {
+        name: name,
+        newpassword: "newpassword"
+    }
+    
+
+}
+
+console.log(storePassword(name, pword1, pword2));
