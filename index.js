@@ -50,4 +50,10 @@ function validatePassword(pword1, pword2){
     }
 }
 
-console.log(validatePassword(pword1, pword2));
+function reversePassword(pword1){
+    var newpass = pword1[(pword1.length)-1];
+    
+    for(let c = (pword1.length)-2; c >= 0; c--){
+        newpass = newpass + pword1[c];
+    }
+}
